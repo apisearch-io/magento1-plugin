@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<apisearch translate="label" module="apisearch">
+            <label>apisearch</label>
+            <sort_order>0</sort_order>
+        </apisearch>
+	  </tabs>
+	  <sections>
+      <configuration  translate="label" module="apisearch">
+        <label>Configuration</label>
+        <tab>apisearch</tab>
+        <frontend_type>text</frontend_type>
+        <sort_order>0</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+          <groups>
+            <apisearch translate="label"> 
+              <label>Search Configuration</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>0</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+                <fields>
+                  <active translate="label">
+                      <label>Enabled</label>
+                      <frontend_type>select</frontend_type>
+                      <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                      <sort_order>0</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </active>
+                  <!--
+                  <user translate="label">
+                      <label>User</label>
+                      <frontend_type>text</frontend_type>
+                      <sort_order>1</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </user>
+                  <password translate="label">
+                      <label>Password</label>
+                      <frontend_type>password</frontend_type>
+                      <sort_order>2</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </password>
+                  -->
+                  <apikey translate="label">
+                      <label>API Key</label>
+                      <frontend_type>text</frontend_type>
+                      <sort_order>3</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </apikey>
+                  <indexkey translate="label">
+                      <label>Index Key</label>
+                      <frontend_type>text</frontend_type>
+                      <sort_order>4</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </indexkey>
+                  <tokenkey translate="label">
+                      <label>Token</label>
+                      <frontend_type>text</frontend_type>
+                      <sort_order>5</sort_order>
+                      <show_in_default>1</show_in_default>
+                      <show_in_website>1</show_in_website>
+                      <show_in_store>1</show_in_store>
+                  </tokenkey>
+                </fields>
+              </apisearch>
+              <!--
+              <apisearch_feed translate="label"> 
+                <label>Feed Configuration</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <fields>
+                  <enabled>
+                    <label>Enabled</label>
+                    <frontend_type>select</frontend_type>
+                    <comment>Activate/deactivate the feed for this store</comment>
+                    <source_model>adminhtml/system_config_source_yesno</source_model>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>1</show_in_store>
+                  </enabled>
+                  <feedname translate="label">
+                    <label>Feed name</label>
+                    <frontend_type>text</frontend_type>
+                    <comment>If you want can change feed name here.</comment>
+                    
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                  </feedname>
+                  <time translate="label">
+                    <label>Feed generation start time</label>
+                    <frontend_type>time</frontend_type>
+                    <comment>The time at which the feed generation starts.</comment>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>1</show_in_store>
+                  </time>
+                  <frequency translate="label">
+                    <label>Frequency</label>
+                    <frontend_type>select</frontend_type>
+                    <comment>Feed generating frequency (e.g. "monthly" means that the feed will be generated on the first day of each month at a given hour).</comment>
+                    <source_model>adminhtml/system_config_source_cron_frequency</source_model>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>1</show_in_store>
+                  </frequency>
+                  <generate translate="label">
+                    <frontend_type>button</frontend_type>
+                    <frontend_model>apisearch/settings_buttons_generate</frontend_model>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                  </generate>
+                </fields>
+          </apisearch_feed>
+          -->
+        </groups>
+      </configuration>
+	  </sections>
+</config>
